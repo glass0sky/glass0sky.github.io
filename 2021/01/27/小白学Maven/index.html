@@ -6,57 +6,57 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Maven小白入门 | Hexo</title>
+  <title>小白学Maven | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="为什么使用maven什么是maven1Maven 是 Apache 软件基金会组织维护的一款自动化构建工具，专注服务于 Java 平台的项目构建和依赖管理  什么是构建  构建并不是创建，创建一个工程并不等于构建一个项目。   ①大家都知道， Java 是一门编译型语言，.java 扩展名的源文件需要编译成.class 扩展名的字节码文件才能够执行。所以编写任何 Java 代码想要执行的话就必须经">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Maven小白入门">
-<meta property="og:url" content="http://yoursite.com/2021/01/27/Maven%E5%B0%8F%E7%99%BD%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:title" content="小白学Maven">
+<meta property="og:url" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="为什么使用maven什么是maven1Maven 是 Apache 软件基金会组织维护的一款自动化构建工具，专注服务于 Java 平台的项目构建和依赖管理  什么是构建  构建并不是创建，创建一个工程并不等于构建一个项目。   ①大家都知道， Java 是一门编译型语言，.java 扩展名的源文件需要编译成.class 扩展名的字节码文件才能够执行。所以编写任何 Java 代码想要执行的话就必须经">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20181203194356579.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20181203194356579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181203194356579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181203192852932.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="c:/Users/mengdongyi/AppData/Roaming/Typora/typora-user-images/1611736754238.png">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/874710/201707/874710-20170704174448206-467233036.png">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/874710/201707/874710-20170704174620628-627798596.png">
-<meta property="og:image" content="c:/Users/mengdongyi/AppData/Roaming/Typora/typora-user-images/1611750009125.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181203195956407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180728101439839?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L015dWh1YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180728103341670?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L015dWh1YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140651413?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140534917?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140713284?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140554791?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140853561?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140735786?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140912328?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140920612?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140802103?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140810574?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140946711?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140829185?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140837905?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140846969?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531140855502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141002270?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141137424?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141314971?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141156494?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141331819?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141215401?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141351850?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141418713?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141259580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141308082?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://img-blog.csdn.net/20150531141452487?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-<meta property="og:image" content="https://images2015.cnblogs.com/blog/874710/201707/874710-20170703222943737-17465874.png">
-<meta property="article:published_time" content="2021-01-27T13:56:33.000Z">
-<meta property="article:modified_time" content="2021-01-27T13:57:54.185Z">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20181203192852932.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/1611736754238.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/874710-20170704174448206-467233036.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/874710-20170704174620628-627798596.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/1611750009125.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20181203195956407.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20180728101439839.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20180728103341670.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140651413.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140534917.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140713284.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140554791.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140853561.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140735786.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140912328.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140920612.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140802103.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140810574.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140946711.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140829185.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140837905.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140846969.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531140855502.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141002270.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141137424.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141314971.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141156494.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141331819.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141215401.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141351850.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141418713.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141259580.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141308082.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20150531141452487.png">
+<meta property="og:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/874710-20170703222943737-17465874.png">
+<meta property="article:published_time" content="2021-01-27T14:24:23.000Z">
+<meta property="article:modified_time" content="2021-01-27T14:24:41.528Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181203194356579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/img/20181203194356579.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -192,20 +192,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Maven小白入门" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-小白学Maven" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Maven小白入门
+      小白学Maven
     </h1>
   
 
         
-        <a href="/2021/01/27/Maven%E5%B0%8F%E7%99%BD%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2021-01-27T13:56:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
+        <a href="/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/" class="archive-article-date">
+  	<time datetime="2021-01-27T14:24:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
 </a>
         
       </header>
@@ -230,7 +230,7 @@
 <p>。。。在settings.xml文件中找到默认仓库的内容，然后添加上如下内容</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;localRepository&gt;D:&#x2F;.m2&#x2F;repository&lt;&#x2F;localRepository&gt;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img-blog.csdnimg.cn/20181203194356579.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70" alt="img"> </p>
+<p> <img src="img/20181203194356579.png" alt="img"> </p>
 <h4 id="2-2-修改默认的中央仓库镜像"><a href="#2-2-修改默认的中央仓库镜像" class="headerlink" title="2.2.  修改默认的中央仓库镜像"></a>2.2.  修改默认的中央仓库镜像</h4><p> Maven默认的中央仓库里的文件不全。所以，都需要自行添加其它的镜像地址。在settings.xml文件中的“<mirrors>”标签里添加如下内容：  </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line"></span><br><span class="line">      &lt;id&gt;ibiblio&lt;&#x2F;id&gt;</span><br><span class="line"></span><br><span class="line">      &lt;mirrorOf&gt;central&lt;&#x2F;mirrorOf&gt;</span><br><span class="line"></span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;&#x2F;name&gt;</span><br><span class="line"></span><br><span class="line">      &lt;url&gt;http:&#x2F;&#x2F;mirrors.ibiblio.org&#x2F;maven2&#x2F;&lt;&#x2F;url&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure>
 
@@ -244,12 +244,12 @@
 <p>保存所做的修改，同时还需要把这个settings.xml文件复制一份到“D:/.m2”目录下。 </p>
 <h4 id="2-3-Maven的运行需要如下两个环境变量："><a href="#2-3-Maven的运行需要如下两个环境变量：" class="headerlink" title="2.3 Maven的运行需要如下两个环境变量："></a>2.3 Maven的运行需要如下两个环境变量：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME：该环境变量应指向JDK安装路径。如果已经成功安装了Tomcat，则环境变量应该是已经正确的</span><br><span class="line">M2_HOME：该环境变量应指向Maven安装路径。</span><br><span class="line"></span><br><span class="line">注意：Maven安装路径就是前面释放Maven压缩文件的路径。Maven安装路径下应该包含bin、boot、conf和lib 4个文件夹。</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img-blog.csdnimg.cn/20181203192852932.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70" alt="å¨è¿éæå¥å¾çæè¿°"> </p>
+<p> <img src="img/20181203192852932.png" alt="å¨è¿éæå¥å¾çæè¿°"> </p>
 <h4 id="2-4-配置Maven命令快捷"><a href="#2-4-配置Maven命令快捷" class="headerlink" title="2.4  配置Maven命令快捷"></a>2.4  配置Maven命令快捷</h4><p> Maven工具的关键命令就是<code>%M2_HOME%/bin</code>路径下的<code>mvn.bat</code>命令，如果希望操作系统可以识别该命令，还应该将<code>%M2_HOME%/bin</code>路径添加到操作系统的PATH环境变量之中。 </p>
 <h4 id="2-5测试是否安装成功"><a href="#2-5测试是否安装成功" class="headerlink" title="2.5测试是否安装成功"></a>2.5测试是否安装成功</h4><p> 启动命令行窗口，输入如下命令（如果未将<code>%M2_HOME%/bin</code>路径添加到操作系统的PATH环境变量之中，则输入<code>mvn.bat</code>的全路径）： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -v</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\mengdongyi\AppData\Roaming\Typora\typora-user-images\1611736754238.png" alt="1611736754238"></p>
+<p><img src="img/1611736754238.png" alt="1611736754238"></p>
 <h1 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h1><h3 id="maven的文件目录结构"><a href="#maven的文件目录结构" class="headerlink" title="maven的文件目录结构"></a>maven的文件目录结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bin：保存Maven的可执行命令。其中mvn和mvn.bat就是执行Maven工具的命令。</span><br><span class="line"></span><br><span class="line">boot：该目录只包含一个plexus-classworlds-2.6.0.jar。plexus-classworlds是一个类加载器框架，与默认的Java类加载器相比，它提供了更丰富的语法以方便配置，Maven使用该框架加载自己的类库。通常无需理会。</span><br><span class="line"></span><br><span class="line">conf：保存Maven配置文件的目录，该目录包含settings.xml文件，该文件用于设置Maven的全局行为。通常建议将该文件复制到~&#x2F;.m2&#x2F;目录下（~表示用户目录），这样可以只设置当前用户的Maven行为。</span><br><span class="line"></span><br><span class="line">lib：该目录包含了所有Maven运行时需要的类库，Maven本身是分模块开发的，因此用户能看到诸如maven-core-3.6.3.jar、maven-repository-metadata-3.6.3.jar等文件。此外，还包含Maven所依赖的第三方类库。</span><br><span class="line">LICENSE、README.txt等说明文档。</span><br></pre></td></tr></table></figure>
 
 
@@ -279,11 +279,11 @@
 <h4 id="①-如何获取坐标-也就是三个关键属性值"><a href="#①-如何获取坐标-也就是三个关键属性值" class="headerlink" title="① 如何获取坐标(也就是三个关键属性值)"></a>① 如何获取坐标(也就是三个关键属性值)</h4><h5 id="方式1：使用网站搜索-从中央仓库拿"><a href="#方式1：使用网站搜索-从中央仓库拿" class="headerlink" title="方式1：使用网站搜索[从中央仓库拿]"></a>方式1：使用网站搜索[从中央仓库拿]</h5><p> 　步骤一：百度搜索关键字“maven repository” </p>
 <p>或找阿里云仓库：<a target="_blank" rel="noopener" href="https://maven.aliyun.com/mvn/search">https://maven.aliyun.com/mvn/search</a></p>
 <p>​    步骤二：输入关键字查询获得需要内容，确定需要版本 </p>
-<p> <img src="https://images2015.cnblogs.com/blog/874710/201707/874710-20170704174448206-467233036.png" alt="img"> </p>
+<p> <img src="img/874710-20170704174448206-467233036.png" alt="img"> </p>
 <p>​    步骤三、获得坐标 </p>
-<p> <img src="https://images2015.cnblogs.com/blog/874710/201707/874710-20170704174620628-627798596.png" alt="img"> </p>
+<p> <img src="img/874710-20170704174620628-627798596.png" alt="img"> </p>
 <h5 id="方式2、使用本地仓库，通过eclipse获得坐标"><a href="#方式2、使用本地仓库，通过eclipse获得坐标" class="headerlink" title="方式2、使用本地仓库，通过eclipse获得坐标"></a>方式2、使用本地仓库，通过eclipse获得坐标</h5><p>。。。。。</p>
-<h4 id="②-依赖-坐标-的常见配置"><a href="#②-依赖-坐标-的常见配置" class="headerlink" title="② 依赖(坐标)的常见配置"></a>② 依赖(坐标)的常见配置</h4><p> dependency下的属性配置，全部有9个， <img src="C:\Users\mengdongyi\AppData\Roaming\Typora\typora-user-images\1611750009125.png" alt="1611750009125"></p>
+<h4 id="②-依赖-坐标-的常见配置"><a href="#②-依赖-坐标-的常见配置" class="headerlink" title="② 依赖(坐标)的常见配置"></a>② 依赖(坐标)的常见配置</h4><p> dependency下的属性配置，全部有9个， <img src="img/1611750009125.png" alt="1611750009125"></p>
 <p> 除了这三个  groupId、artifactId、version 还有。。。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">　type：依赖的类型，比如是jar包还是war包等</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　默认为jar，表示依赖的jar包</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　注意：&lt;type&gt;pom.lastUpdated&lt;&#x2F;type&gt; 这个我们在上面添加servlet-jar的时候就遇到过，看到lastUpdated的意思是表示使用更新描述信息，占位符作用，通俗点讲，选择该类型，jar包不会被加载进来，只是将该jar包的一些描述信息加载进来，使别的jar包在引用他时，能够看到一些相关的提示信息，仅此而已，所以说他是个占位符，只要记住他的jar包不会被加载进来。</span><br><span class="line"></span><br><span class="line">　optional：标记依赖是否可选。默认值false</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　比如struts2中内置了log4j这个记录日志的功能，就是将log4j内嵌入struts2的jar包中，而struts2有没有log4j这个东西都没关系，有它，提示的信息更多，没它，也能够运行，只是提示的信息就相对而言少一些，所以这个时候，就可以对它进行可选操作，想要它就要，不想要，就设置为false。</span><br><span class="line"></span><br><span class="line">　exclusions：排除传递依赖，解决jar冲突问题</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　依赖传递的意思就是，A项目 依赖 B项目，B项目 依赖 C项目，当使用A项目时，就会把B也给加载进来，这是传递依赖，依次类推，C也会因此给加载进来。</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line">scope：依赖范围，意思就是通过pom.xml加载进来的jar包，来什么范围内使用生效，范围包括compile编译时，runtime运行时，test测试 时　　　　　　　　</span><br><span class="line">                compile：默认值，如果选择此值，表示编译、测试和                    运行都使用当前jar</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　test：表示只在测试时当前jar生效，在别的范围内就                      不能使用该jar包。例如：junit 。此处不写也不报                      错，因为默认是compile，compile包扩了测试</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　　runtime，表示测试和运行时使用当前jar，编译时不                     用该jar包。例如：JDBC驱动。JDBC驱动，在编译时                     (也就是我们写代码的时候都是采用接口编程，压根就                     没使用到JDBC驱动包内任何东西，只有在运行时才用                       的到，所以这个是典型的使用runtime这个值的例                      子)，此处不写也不报错，理由同上　　　　</span><br><span class="line">　　　　　　　　　　　　</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -320,51 +320,51 @@
 </tr>
 </tbody></table>
 <h4 id="1-eclipse中配置maven"><a href="#1-eclipse中配置maven" class="headerlink" title="1.eclipse中配置maven"></a>1.eclipse中配置maven</h4><ol>
-<li><img src="https://img-blog.csdnimg.cn/20181203195956407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODQwODQz,size_16,color_FFFFFF,t_70" alt="å¨è¿éæå¥å¾çæè¿°"> </li>
+<li><img src="img/20181203195956407.png" alt="å¨è¿éæå¥å¾çæè¿°"> </li>
 </ol>
 <p>   2   .   </p>
 <h4 id="2-创建eclipse的web工程"><a href="#2-创建eclipse的web工程" class="headerlink" title="2.创建eclipse的web工程"></a>2.创建eclipse的web工程</h4><h5 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h5><ol>
 <li>​        新建maven  project </li>
 </ol>
 <p>​     2.</p>
-<p> <img src="https://img-blog.csdn.net/20180728101439839?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L015dWh1YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"> </p>
+<p> <img src="img/20180728101439839.png" alt="img"> </p>
 <p>3.</p>
-<p> <img src="https://img-blog.csdn.net/20180728103341670?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L015dWh1YQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"> </p>
+<p> <img src="img/20180728103341670.png" alt="img"> </p>
 <h5 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h5><p>1  .   </p>
 <p>​        新建maven  project </p>
 <p>2 .  不勾选默认框架</p>
-<p> <img src="https://img-blog.csdn.net/20150531140651413?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
+<p> <img src="img/20150531140651413.png" alt="img"> </p>
 <p>3 .    </p>
-<p> <img src="https://img-blog.csdn.net/20150531140534917?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
+<p> <img src="img/20150531140534917.png" alt="img"> </p>
 <p>4 . </p>
-<p> <img src="https://img-blog.csdn.net/20150531140713284?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
+<p> <img src="img/20150531140713284.png" alt="img"> </p>
 <p>5 .</p>
-<p> <img src="https://img-blog.csdn.net/20150531140554791?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
+<p> <img src="img/20150531140554791.png" alt="img"> </p>
 <p>6 .  右键项目名 选择 Properties </p>
-<p> <img src="https://img-blog.csdn.net/20150531140853561?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140735786?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140912328?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140920612?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140802103?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140810574?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140946711?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140829185?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140837905?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140846969?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531140855502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141002270?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141137424?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141314971?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141156494?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141331819?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141215401?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141351850?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141418713?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141259580?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141308082?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
-<p> <img src="https://img-blog.csdn.net/20150531141452487?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMTUxMzkzOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img"> </p>
+<p> <img src="img/20150531140853561.png" alt="img"> </p>
+<p> <img src="img/20150531140735786.png" alt="img"> </p>
+<p> <img src="img/20150531140912328.png" alt="img"> </p>
+<p> <img src="img/20150531140920612.png" alt="img"> </p>
+<p> <img src="img/20150531140802103.png" alt="img"> </p>
+<p> <img src="img/20150531140810574.png" alt="img"> </p>
+<p> <img src="img/20150531140946711.png" alt="img"> </p>
+<p> <img src="img/20150531140829185.png" alt="img"> </p>
+<p> <img src="img/20150531140837905.png" alt="img"> </p>
+<p> <img src="img/20150531140846969.png" alt="img"> </p>
+<p> <img src="img/20150531140855502.png" alt="img"> </p>
+<p> <img src="img/20150531141002270.png" alt="img"> </p>
+<p> <img src="img/20150531141137424.png" alt="img"> </p>
+<p> <img src="img/20150531141314971.png" alt="img"> </p>
+<p> <img src="img/20150531141156494.png" alt="img"> </p>
+<p> <img src="img/20150531141331819.png" alt="img"> </p>
+<p> <img src="img/20150531141215401.png" alt="img"> </p>
+<p> <img src="img/20150531141351850.png" alt="img"> </p>
+<p> <img src="img/20150531141418713.png" alt="img"> </p>
+<p> <img src="img/20150531141259580.png" alt="img"> </p>
+<p> <img src="img/20150531141308082.png" alt="img"> </p>
+<p> <img src="img/20150531141452487.png" alt="img"> </p>
 <h5 id="maven-java项目结构"><a href="#maven-java项目结构" class="headerlink" title="maven java项目结构"></a>maven java项目结构</h5><p>　　　　　　　　　　simple<br>　　　　　　　　　　　　—pom.xml　　　　核心配置，项目根下<br>　　　　　　　　　　　　—src<br>　　　　　　　　　　　　　—main　　　　　　<br>　　　  　　　　　　　　　　 —java　　　　java源码目录<br>　　   　　　　　　　　　　　 —resources　 java配置文件目录<br>　　　　　　　　　　　　　—test<br>　　　　　　　　　　　　　　　—java　　　　测试源码目录<br>　　　　　　　　　　　　　　　—resources　 测试配置目录</p>
-<p>　　　　　　　　　　<a target="_blank" rel="noopener" href="https://images2015.cnblogs.com/blog/874710/201707/874710-20170703222943737-17465874.png"><img src="https://images2015.cnblogs.com/blog/874710/201707/874710-20170703222943737-17465874.png" alt="img"></a></p>
+<p>　　　　　　　　　　<a target="_blank" rel="noopener" href="https://images2015.cnblogs.com/blog/874710/201707/874710-20170703222943737-17465874.png"><img src="img/874710-20170703222943737-17465874.png" alt="img"></a></p>
 <p> 图中有一个target目录，是因为将该java项目进行了编译，src/main/java下的源代码就会编译成.class文件放入target目录中，target就是输出目录。 </p>
 <h5 id="maven-web项目结构"><a href="#maven-web项目结构" class="headerlink" title="maven web项目结构"></a>maven web项目结构</h5><p>　　　　　　　　　　pom.xml          核心配置<br>　　　　　　　　　　src/main/java         java源码<br>　　　　　　　　　　src/main/resources       java配置<br>　　　　　　　　　　src/main/webapp       myeclipse web项目中 WebRoot目录<br>  　　　　　　　　　　　　 |– WEB-INF<br>    　　　　　　　　　　　 |– web.xml<br>　　　　　　　　　　src/test           测试<br>　　　　　　　　　　target           输出目录</p>
 <h5 id="用命令操作maven-java或web项目"><a href="#用命令操作maven-java或web项目" class="headerlink" title="用命令操作maven java或web项目"></a>用命令操作maven java或web项目</h5><p>　　　　　　　　　　编译：mvn compile　　–src/main/java目录java源码编译生成class （target目录下）</p>
@@ -500,7 +500,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/01/27/Maven%E5%B0%8F%E7%99%BD%E5%85%A5%E9%97%A8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/01/27/%E5%B0%8F%E7%99%BD%E5%AD%A6Maven/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -514,18 +514,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/01/27/1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/27/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%86%99%E5%8D%9A%E5%AE%A2%E5%88%B0GitHub/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">第一次写博客到GitHub</div>
+    <a href="/2020/08/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
       <i class="icon-circle-right"></i>
     </a>
   
